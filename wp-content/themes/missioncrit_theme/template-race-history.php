@@ -26,7 +26,7 @@ get_header();  ?>
         <div class="racePoster">
           <img src='<?php echo $racePoster['url']; ?>'>
           <div class="raceTitleLink">
-          <a href='<?php echo $link; ?>'><?php echo $raceTitle; ?></a>
+          <a href='<?php echo $link; ?>' target='_blank'><?php echo $raceTitle; ?></a>
           </div>
 
         </div>
