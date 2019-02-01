@@ -131,8 +131,14 @@ get_header();  ?>
     <div class='contact' id="contact-nav">
       <h1>CONTACT</h1>
       <div class='contactContent'>
-        <?php echo do_shortcode('[contact-form-7 id="122" title="Contact form 1"]'); ?>
+        <!-- <?php echo do_shortcode('[contact-form-7 id="122" title="Contact form 1"]'); ?> -->
 
+        <form action="https://formspree.io/info@missioncrit.com" method="POST">
+          <input type="text" name="name" placeholder="Name">
+          <input type="email" name="_replyto" placeholder="Email">
+          <textarea name='message' placeholder='Message'></textarea>
+          <input type="submit" value="Send">
+        </form>
       <div class='sponserVolunteer'>
 
       <div class='sponsorsContact'>
@@ -152,7 +158,12 @@ get_header();  ?>
         <p>
           Sign up for the mailing list to get updates about the race/rad bike stuff/etc.
         </p>
-        <?php echo do_shortcode('[contact-form-7 id="123" title="Mailing List"]'); ?>
+        <form action="https://formspree.io/info@missioncrit.com" method="POST">
+          <input type="email" name="_replyto" placeholder='Email'>
+          <input type="submit" value="Send">
+</form>
+
+        <!-- <?php echo do_shortcode('[contact-form-7 id="123" title="Mailing List"]'); ?> -->
       </div>
     </div>
     <div class="content">
